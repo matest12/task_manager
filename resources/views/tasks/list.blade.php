@@ -56,7 +56,7 @@
 
           @forelse($tasks as $task)
           <tr
-          @if($task->status)
+          @if($task->status==1)
           class="table-success"
           @else
           class="table-danger"

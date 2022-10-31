@@ -39,8 +39,8 @@
         </div>
         @if( $task->file_path )
         <div class="form-group mt-2">
-          <label class="custom-file-label" for="file">{{ __('tasks.file_label') }}</label>
-          <a href="{{ asset($task->file_path) }}"></a>
+          <label class="custom-file-label" for="file">Файл</label>
+          <a href="{{ asset($task->file_path) }}">Скачать</a>
         </div>
         @endif
 
