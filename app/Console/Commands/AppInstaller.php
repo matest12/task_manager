@@ -148,7 +148,7 @@ class AppInstaller extends Command
     {
         try {
             Artisan::call('migrate:fresh', ['--force' => true]);
-            Artisan::call('db:seed', ['--force' => true]);
+            //Artisan::call('db:seed', ['--force' => true]);
             Artisan::call('db:seed', [
               '--class' => 'PermissionTableSeeder',
               '--force' => true
