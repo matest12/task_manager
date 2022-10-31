@@ -158,6 +158,7 @@ class AppInstaller extends Command
               '--force' => true
             ]);
 
+            Artisan::call('storage:link');
 
 
         } catch (\Exception $e) {
